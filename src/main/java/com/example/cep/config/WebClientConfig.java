@@ -12,7 +12,7 @@ public class WebClientConfig {
 	@Bean
 	public WebClient webClient() {
 		return WebClient.builder()
-		        .baseUrl("https://viacep.com.br")
+		        .baseUrl("coloque aqui a url base que deseja.  Ex: http://vamosconsultarcep")
 		        .defaultHeader(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON_VALUE)
 		        .build();
 	}

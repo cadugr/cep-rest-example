@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.cep.RestauranteService;
 import com.example.cep.domain.Restaurante;
+import com.example.cep.service.RestauranteService;
 
 @RestController
 @RequestMapping("/restaurantes")

@@ -1,4 +1,4 @@
-package com.example.cep;
+package com.example.cep.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +24,7 @@ public class RestauranteService {
 	public Restaurante cadastrar(Restaurante restaurante) {
 		
 		Flux<Endereco> enderecoWs = webClient.get()
-        .uri("/ws/".concat(restaurante.getEndereco().getCep()).concat("/json/"))
+        .uri("/cep") //Nessa linha você apenas indica o recurso que deseja acessar.  Exemplo: /cep.  No fim, a sua requisição ficaria: http://vamosconsultarcep/cep  
         .retrieve()
         .bodyToFlux(Endereco.class);
 		
