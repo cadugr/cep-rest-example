@@ -22,7 +22,7 @@ mvn spring-boot:run
 ```
 ## Testando:
 
-Via client, como o postman, acessar o endpoint /clientes:
+Via client, como o postman, acessar o endpoint /restaurantes:
 
 #### POST http://localhost:8080/restaurantes
 
